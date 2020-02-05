@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // Adding the center widget losen the constraint around widget width and heigth
     return Center(
       child: Container(
         alignment: Alignment.center,
