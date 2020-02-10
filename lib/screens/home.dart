@@ -104,10 +104,21 @@ class OrderButton extends StatelessWidget {
         color: Colors.lightGreen,
         elevation: 5.0,
         onPressed: () {
+          order(context);
         }
       )
     );
     return button;
+  }
+  void order(BuildContext context) {
+    var alert = AlertDialog(
+      title: Text("Order Completed"),
+      content: Text("Thanks for your order"),
+    );
+    showDialog(
+      context: context,
+      builder: (BuildContext context) => alert
+    );
   }
 
 } 
