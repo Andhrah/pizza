@@ -1,6 +1,6 @@
 # pizza
 
-Pizza is an app that demonstrate how to use different widget in a Flutter app. It focuses on stateles widget. 
+Pizza is an app that demonstrate how to use different widget in a Flutter app. It focuses on stateless widget. 
 
 ## Getting Started
 
