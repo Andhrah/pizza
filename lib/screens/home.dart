@@ -20,6 +20,7 @@ class Home extends StatelessWidget {
             "Margherita",
             textDirection: TextDirection.ltr,
             style: TextStyle(
+              color: Colors.white,
               fontSize: 20.0,
               decoration: TextDecoration.none,
               fontFamily: "Oxygen",
@@ -32,6 +33,7 @@ class Home extends StatelessWidget {
             "Tomato, Mozzarella, Basil",
             textDirection: TextDirection.ltr,
             style: TextStyle(
+              color: Colors.white,
               fontSize: 20.0,
               decoration: TextDecoration.none,
               fontFamily: "Oxygen",
@@ -46,6 +48,7 @@ class Home extends StatelessWidget {
             "Marinara",
             textDirection: TextDirection.ltr,
             style: TextStyle(
+              color: Colors.white,
               fontSize: 20.0,
               decoration: TextDecoration.none,
               fontFamily: "Oxygen",
@@ -58,6 +61,7 @@ class Home extends StatelessWidget {
             "Tomato, Garlic",
             textDirection: TextDirection.ltr,
             style: TextStyle(
+              color: Colors.white,
               fontSize: 20.0,
               decoration: TextDecoration.none,
               fontFamily: "Oxygen",
