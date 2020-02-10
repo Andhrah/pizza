@@ -7,7 +7,7 @@ class Home extends StatelessWidget {
     return Center(
       child: Container(
         alignment: Alignment.center,
-        padding: EdgeInsets.only(top: 30.0, left: 10.0),
+        padding: EdgeInsets.only(top: 30.0, left: 10.0, right: 10.0),
         color: Colors.deepOrangeAccent,
         // This is how you use width and height in flutter =>
         // width: 192.0,
@@ -102,7 +102,7 @@ class OrderButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var button = Container(
-      margin: EdgeInsets.only(top: 50.0),
+      margin: EdgeInsets.only(bottom: 20.0),
       child: RaisedButton(
         child: Text("Order your Pizza!",
         style: TextStyle(
