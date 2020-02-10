@@ -71,6 +71,7 @@ class Home extends StatelessWidget {
         )
         ],),
         PizzaImageWidget(),
+        OrderButton(),
         ],
         )
       )
@@ -88,3 +89,25 @@ class PizzaImageWidget extends StatelessWidget{
   }
 
 }
+
+class OrderButton extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    var button = Container(
+      margin: EdgeInsets.only(top: 50.0),
+      child: RaisedButton(
+        child: Text("Order your Pizza!",
+        style: TextStyle(
+          color: Colors.white,
+        )
+        ),
+        color: Colors.lightGreen,
+        elevation: 5.0,
+        onPressed: () {
+        }
+      )
+    );
+    return button;
+  }
+
+} 
