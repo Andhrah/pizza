@@ -6,7 +6,15 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Pizza",
-      home: Home(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Center(
+            child: Text("Pizza"),
+          ),
+            backgroundColor: Colors.lightGreen,
+        ),
+        body: Home(),
+      )
     )
   );
 }
