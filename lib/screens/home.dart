@@ -13,35 +13,43 @@ class Home extends StatelessWidget {
         // width: 192.0,
         // height: 96.0,
         // This is how to use margin in flutter => margin: EdgeInsets.all(50.0),
-        child: Column(children: <Widget>[
-          Row(children: <Widget>[
-          Expanded(
-            child: Text(
-            "Margherita",
-            textDirection: TextDirection.ltr,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 20.0,
-              decoration: TextDecoration.none,
-              fontFamily: "Oxygen",
-              fontWeight: FontWeight.normal,
-            )
-            )
-          ),
-        Expanded(
-          child: Text(
-            "Tomato, Mozzarella, Basil",
-            textDirection: TextDirection.ltr,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 20.0,
-              decoration: TextDecoration.none,
-              fontFamily: "Oxygen",
-              fontWeight: FontWeight.normal,
-            )
-          )
-        )
-        ],),
+        child: ListView(
+          children: <Widget>[
+            Column(children: <Widget>[
+              Row(children: <Widget>[
+                Expanded(
+                  child: Text(
+                  "Margherita",
+                  textDirection: TextDirection.ltr,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20.0,
+                    decoration: TextDecoration.none,
+                    fontFamily: "Oxygen",
+                    fontWeight: FontWeight.normal,
+                  )
+                  )
+                ),
+                Expanded(
+                  child: Text(
+                    "Ingredient: \n Tomato, Mozzarella, Basil",
+                    textDirection: TextDirection.ltr,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+                      decoration: TextDecoration.none,
+                      fontFamily: "Oxygen",
+                      fontWeight: FontWeight.normal,
+                    )
+                  )
+                )
+            ],),
+          ],
+        ),
+
+        PizzaImageWidget(),
+        OrderButton(),
+
         Row(children: <Widget>[
           Expanded(
             child: Text(
@@ -58,7 +66,7 @@ class Home extends StatelessWidget {
           ),
         Expanded(
           child: Text(
-            "Tomato, Garlic",
+            "Ingrdient: \n Tomato, Garlic",
             textDirection: TextDirection.ltr,
             style: TextStyle(
               color: Colors.white,
